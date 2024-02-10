@@ -1,0 +1,156 @@
+@media (max-width: 1740px) {
+  /* === Social Icon === */
+  .socialIcon {
+    left: 40px;
+  }
+}
+@media (max-width: 1440px) {
+  /* === Social Icon === */
+  .socialIcon {
+    left: 40px;
+  }
+}
+@media (max-width: 990px) {
+  #layout{
+    overflow: hidden;
+  }
+  #header nav {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 73px;
+    right: 0;
+    background-color: var(--black);
+    padding: 50px;
+    transform: translateX(400px);
+    transition: all .4s ease-in-out;
+  }
+  
+  #header nav.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  #header .navItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  #header .navItem a {
+    margin: 10px;
+  }
+
+  #header .navbar .navToggle {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .navToggle .bar {
+    height: 2px;
+    width: 32px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: all .4s ease-in-out;
+  }
+
+  .navToggle .bar::before,
+  .navToggle .bar::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--primary);
+    transition: all .4s ease-in-out;
+  }
+
+  .navToggle .bar::before {
+    width: 25px;
+    right: 0;
+    transform: translateY(-8px);
+  }
+
+  .navToggle .bar::after {
+    width: 28px;
+    right: 0;
+    transform: translateY(8px);
+  }
+
+  .navToggle.open .bar {
+    transform: translateX(40px);
+    background: transparent;
+  }
+
+  .navToggle.open .bar::before {
+    transform: rotate(-135deg) translate(26px, -25px);
+    width: 32px;
+  }
+
+  .navToggle.open .bar::after {
+    transform: rotate(130deg) translate(26px, 25px);
+    width: 32px;
+  }
+
+  /* === Social Icon === */
+  .socialIcon{
+    left: 50px;
+  }
+
+}
+@media (max-width: 667px){
+  #contact .banner {
+    padding: 32px 32px;
+  }
+  .headingBg {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px){
+  .navbar{
+    padding: 0 10px;
+  }
+  #home{
+    padding: 0 10px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .socialIcon{
+    left: 40px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .headingBg {
+    font-size: 30px;
+  }
+  #home .content h1 {
+    font-size: 30px;
+  }
+  #contact .banner {
+    padding: 10px 18px;
+  }
+  #contact .banner h5{
+    font-size: 16px;
+  }
+  #contact .banner h2{
+    font-size: 20px;
+  }
+  #footer span {
+  font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+.btnDefault {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  #footer span {
+    font-size: 12px;
+  }
+}
